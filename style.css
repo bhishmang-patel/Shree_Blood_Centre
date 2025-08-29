@@ -845,8 +845,8 @@ input[type="date"] {
         top: 0;
         right: -100%;
         width: 75%;
-        height: 100dvh; 
-        min-height: 100vh; 
+        height: calc(var(--vh, 1vh) * 100); 
+        min-height: calc(var(--vh, 1vh) * 100); 
         background: rgba(220, 38, 127, 0.96);
         flex-direction: column;
         padding: 6rem 2rem 2rem;
