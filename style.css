@@ -18,7 +18,10 @@ body {
     overflow-x: hidden;
 }
 
-img, video {
+html, body { -webkit-text-size-adjust: 100%; overflow-x: hidden; }
+.form-container { padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right); }
+
+img, {
     max-width: 100%;
     height: auto;
     display: block;
