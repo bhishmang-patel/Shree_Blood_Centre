@@ -766,6 +766,14 @@ html {
     transition: 0.3s;
 }
 
+input[type="date"] {
+    -webkit-appearance: none;
+    appearance: none;
+    min-height: 50px;
+    background-color: #f9f9f9 !important;
+    color: #333 !important;
+}
+
 /* Mobile Responsive Styles */
 @media (max-width: 1200px) {
    .logo a {
@@ -806,7 +814,7 @@ html {
     }
     
     .emergency-btn {
-        display: block; 
+        display: none; 
     }
 
     .hero {
@@ -1090,6 +1098,15 @@ html {
         width: 150px;
         height: 210px;
     }
+
+    .blood-drop img {
+        margin-top: 25px !important;
+        margin-left: 0 !important;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
     
     .blood-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -1168,6 +1185,35 @@ html {
     .second-title {
         font-size: 2.5rem !important;
         margin-bottom: 1.5rem !important;
+    }
+
+    input[type="date"] {
+        padding: 16px;
+        font-size: 16px; /* Prevents iOS zoom on focus */
+        background-color: #fff !important;
+        border: 2px solid #ddd;
+        min-height: 55px;
+        width: 100%;
+        display: block;
+    }
+    
+    input[type="date"]:focus {
+        border-color: #dc267f;
+        background-color: #fff !important;
+    }
+    
+    /* Ensure all inputs are easily tappable on mobile */
+    input, select, textarea {
+        font-size: 16px; /* Prevents iOS zoom on focus */
+    }
+    
+    /* Additional styling for date inputs to make them consistent */
+    input[type="date"]::-webkit-inner-spin-button,
+    input[type="date"]::-webkit-calendar-picker-indicator {
+        color: #dc267f;
+        font-size: 18px;
+        padding: 4px;
+        background: none;
     }
 }
 
@@ -1268,6 +1314,12 @@ html {
     .second-title {
         font-size: 2.2rem !important;
         margin-bottom: 1.5rem !important;
+    }
+}
+
+@media only screen and (max-width: 430px) and (max-height: 932px) and (-webkit-device-pixel-ratio: 3) {
+    input[type="date"] {
+        padding: 18px 16px;
     }
 }
 
