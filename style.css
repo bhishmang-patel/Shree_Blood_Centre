@@ -148,7 +148,7 @@ input, select, textarea, button {
 /*  Hero Section  */
 .hero {
     padding-top: 80px;
-    min-height: 100vh;
+    min-height: calc(var(--vh, 1vh) * 100);
     background: linear-gradient(135deg, #dc267f 0%, #ff4757 100%);
     display: flex;
     align-items: center;
