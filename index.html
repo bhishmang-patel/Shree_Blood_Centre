@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree Voluntary Blood Centre | Save Lives - Donate Blood</title>
+    <link rel="icon" type="image/x-icon" href="assets/logo.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("F3qplo_UPwkYAtYhg"); // 🔑 replace with your EmailJS Public Key
+    })();
+    </script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo-icon">
+                <a href="#home"> <i class="fas fa"><img src="assets/logo-2.png"></i></a>
+            </div>
+            <div class="logo">
+                <a href="#home">Shree Voluntary Blood Centre</a>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#blood-types">Stock</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="get-blood.html">Get Blood</a></li>
+            </ul>
+            <button class="emergency-btn">
+                <a href="tel:+918780323877" class="emergency-btn">
+                    <i class="fas fa-phone-alt"></i> Emergency
+                </a>
+            </button>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="welcome-title">Welcome to Shree</h1>
+                <p class="hero-subtitle">🩸 Saving Lives Since 2022</p>
+                <h1 class="hero-title">Donate Blood, Save Lives</h1>
+                <p class="hero-description">
+                    Your single donation can save up to 3 lives. Join our mission to ensure blood is always available for those in need at Shree Voluntary Blood Centre, Himatnagar. <br><br>
+                    आपका एक रक्तदान 3 लोगों की जान बचा सकता है। हमारे मिशन से जुड़ें ताकि ‘श्री वॉलंटरी ब्लड सेंटर, हिम्मतनगर’ में ज़रूरतमंदों के लिए रक्त हमेशा उपलब्ध रह सके।
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">
+                        <i class="fas fa-heart"></i> Donate Now
+                    </a>
+                    <a href="#blood-types" class="btn-secondary">
+                        <i class="fas fa-search"></i> Find Blood
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="blood-drop"><img src="assets/shree.png" style="height: 130px; margin-top: 60%; margin-left: 15%;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blood Availability Section -->
+    <section class="blood-types fade-in" id="blood-types">
+        <div class="container">
+            <h2 class="section-title">Blood Availability</h2>
+            <p class="section-subtitle">
+                Blood supplies can sometimes be limited, it is advisable to consult with the Shree Voluntary Blood Centre prior to your visit to ensure availability.
+            </p>
+            <div class="blood-grid">
+                <div class="blood-type-card">
+                    <div class="blood-type">A+</div>
+                    <div class="availability available">Available</div>
+                    <div class="units">10 Units</div>
+                </div>
+                <div class="blood-type-card">
+                    <div class="blood-type">A-</div>
+                    <div class="availability low">Low Stock</div>
+                    <div class="units">2 Units</div>
+                </div>
+                <div class="blood-type-card">
+                    <div class="blood-type">B+</div>
+                    <div class="availability available">Available</div>
+                    <div class="units">15 Units</div>
+                </div>
+                <div class="blood-type-card">
+                    <div class="blood-type">B-</div>
+                    <div class="availability critical">Critical</div>
+                    <div class="units">4 Units</div>
+                </div>
+                <div class="blood-type-card">
+                    <div class="blood-type">AB+</div>
+                    <div class="availability available">Available</div>
+                    <div class="units">7 Units</div>
+                </div>
+                <div class="blood-type-card">
+                    <div class="blood-type">AB-</div>
+                    <div class="availability low">Low Stock</div>
+                    <div class="units">1 Units</div>
+                </div>
+                <div class="blood-type-card">
+                    <div class="blood-type">O+</div>
+                    <div class="availability available">Available</div>
+                    <div class="units">12 Units</div>
+                </div>
+                <div class="blood-type-card">
+                    <div class="blood-type">O-</div>
+                    <div class="availability critical">Critical</div>
+                    <div class="units">2 Units</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services fade-in" id="services">
+        <div class="container">
+            <h2 class="second-title">Our Services</h2>
+            <p class="section-subtitle">
+                Comprehensive blood banking services available 24/7.
+            </p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-droplet"></i>
+                    </div>
+                    <h3 class="service-title">Blood Donation</h3>
+                    <p class="service-description">
+                        Whole Blood, PCV, FFP and Platelets available with safe care and quality service.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3 class="service-title">Blood Testing</h3>
+                    <p class="service-description">
+                        Comprehensive blood testing including blood typing, disease screening, and quality assurance using Elisa method.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-truck-medical"></i>
+                    </div>
+                    <h3 class="service-title">Emergency Supply</h3>
+                    <p class="service-description">
+                        24/7 emergency blood supply service for hospitals and medical facilities across the region.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-vial"></i>
+                    </div>
+                    <h3 class="service-title">Component Separation</h3>
+                    <p class="service-description">
+                        Advanced blood component separation for platelets, plasma, and red blood cell concentrates.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="service-title">Donor Camps</h3>
+                    <p class="service-description">
+                        Organized blood donation camps at schools, colleges, corporate offices, companies and community centers.
+                    </p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3 class="service-title">Blood Donation</h3>
+                    <p class="service-description">
+                        Safe and comfortable blood donation process with experienced medical staff and modern equipment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Section -->
+    <section class="emergency fade-in">
+        <div class="container">
+            <div class="emergency-content">
+                <h2 class="emergency-title">🚨 EMERGENCY</h2>
+                <p class="emergency-subtitle">Need blood urgently? Call us immediately!</p>
+                <a href="tel:+918780323877" class="emergency-phone">
+                    <i class="fas fa-phone-alt"></i> +91 87803 23877
+                </a>
+                <p style="opacity: 0.8; margin-top: 1rem;">Available 24/7 for emergency blood requirements</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Donation Form Section -->
+    <section class="contact fade-in" id="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">
+                Ready to donate blood or need assistance? Contact us or fill out the donation form below.
+            </p>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3 style="margin-bottom: 2rem; color: #dc267f;">Contact Information</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Address</h3>
+                            <p> Shree Voluntary Blood Centre <br>
+                                3rd Floor Tulsi Landmark,<br> 
+                                Sahkari Jin, Himatnagar,<br>
+                                Sabarkantha, Gujarat, <br> 
+                                India - 383001</p>  
+                        </div>
+
+                         <!-- Google Map Embed -->
+                    <div style="flex-shrink: 0;">
+                        <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3682.04126082809!2d72.9710685!3d23.5805509!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395db9efce0beffb%3A0x51c307f274f56905!2sShree%20Voluntary%20Blood%20Centre!5e0!3m2!1sen!2sin!4v1692787765000!5m2!1sen!2sin" 
+                        width="198" 
+                        height="180" 
+                        style="border:0; border-radius:10px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Phone Numbers</h3>
+                            <a href="tel:+918780323877">Emergency: +91 87803 23877</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <a href="mailto:shreevoluntarybloodbank@gmail.com">
+                                shreevoluntarybloodbank@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Working Hours</h3>
+                            <p>24/7 Emergency Services<br>
+                            Donation: 12:00 AM - 11:59 PM<br>
+                            Reception: 12:00 AM - 11:59 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+            <!-- Donation Form Registration -->
+                <div class="donation-form">
+                    <h3 style="margin-bottom: 2rem; color: #dc267f;">Blood Donation Registration</h3>
+                    <form id="donationForm">
+                        <div class="form-group">
+                            <label for="fullName">Full Name</label>
+                            <input type="text" id="fullName" placeholder="Please enter your full name" name="fullName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="date">Date</label>
+                            <input type="date" id="date" name="date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="number" id="age" placeholder="Please enter your age" name="age" min="18" max="65" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="bloodType">Blood Group</label>
+                            <select id="bloodType" name="bloodType" required>
+                                <option value="">Select Blood Type</option>
+                                <option value="A+">A+</option>
+                                <option value="A-">A-</option>
+                                <option value="B+">B+</option>
+                                <option value="B-">B-</option>
+                                <option value="AB+">AB+</option>
+                                <option value="AB-">AB-</option>
+                                <option value="O+">O+</option>
+                                <option value="O-">O-</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" placeholder="Please enter your 10 digit phone number" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" placeholder="Please enter your email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <textarea id="address" placeholder="Please enter your address" name="address" rows="3" required style="font-family: sans-serif;"></textarea>
+                             
+                        </div>
+                        <div class="form-group">
+                            <label for="lastDonation">Last Donation Date (if any)</label>
+                            <input type="date" id="lastDonation" name="lastDonation">
+                        </div>
+                        <div class="form-group">
+                            <label for="scheduleDonation">Schedule Donation Date</label>
+                            <input type="date" id="scheduleDonation" name="scheduleDonation">
+                            <small style="display: block; margin-top: 0.5rem; color: #666; font-size: 0.9rem;">
+                                Select a future date for your scheduled donation
+                            </small>
+                        </div>
+                        <div class="form-group">
+                            <label for="donationTime">Schedule Donation Time</label>
+                            <input type="time" donationTime" name="donationTime">
+                        </div>
+
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-heart"></i> Register for Donation
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section fade-in" id="about" style="padding: 100px 0; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+        <div class="container">
+            <h2 class="section-title">About Shree Voluntary Blood Centre</h2>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 3rem; margin-top: 3rem;">
+                <div style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #dc267f, #ff4757); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: white; font-size: 1.5rem;">
+                        <i class="fas fa-history"></i>
+                    </div>
+                    <h3 style="color: #dc267f; margin-bottom: 1rem;">Our History</h3>
+                    <p style="color: #666; line-height: 1.6;">
+                        Established in 2022, Shree Voluntary Blood Centre has been serving Himatnagar and Gujarat community for over a decade. We have successfully collected over 50,000 units of blood and saved countless lives.
+                    </p>
+                </div>
+                <div style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #dc267f, #ff4757); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: white; font-size: 1.5rem;">
+                        <i class="fas fa-award"></i>
+                    </div>
+                    <h3 style="color: #dc267f; margin-bottom: 1rem;">Our Mission</h3>
+                    <p style="color: #666; line-height: 1.6;">
+                        To ensure safe, adequate, and timely supply of blood and blood products to all patients in need, while maintaining the highest standards of quality and safety.
+                    </p>
+                </div>
+                <div style="background: white; padding: 2.5rem; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <div style="width: 60px; height: 60px; background: linear-gradient(135deg, #dc267f, #ff4757); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1.5rem; color: white; font-size: 1.5rem;">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3 style="color: #dc267f; margin-bottom: 1rem;">Certifications</h3>
+                    <p style="color: #666; line-height: 1.6;">
+                        Licensed by Gujarat State Council for Blood Transfusion and fully authorized to collect, screen, and distribute blood products.<br>
+                        License No: GB/220
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section class="stats-section fade-in">
+        <div class="container">
+            <h2 class="second-title" style="color: rgb(205, 184, 184); margin-bottom: 3rem;">Our Impact</h2>
+            <div class="stats-container">
+                <div class="stat-item">
+                    <div class="stat-number">10,000+</div>
+                    <div class="stat-label">Blood Units Collected</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">50,000+</div>
+                    <div class="stat-label">Components Issued</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">5,000+</div>
+                    <div class="stat-label">Regular Donors</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100+</div>
+                    <div class="stat-label">Blood Camps Organized</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Shree Voluntary Blood Centre</h3>
+                    <p>Dedicated to saving lives through safe blood donation and transfusion services. Your trusted partner in healthcare since 2022.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="#home">Home</a></p>
+                    <p><a href="#services">Our Services</a></p>
+                    <p><a href="#blood-types">Blood Availability</a></p>
+                    <p><a href="#contact">Contact Us</a></p>
+                    <p><a href="#about">About Us</a></p>
+                    <p><a href="get-blood.html">Get Blood</a></p>
+                    <p><a href="photo.html">Photo Gallery</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Emergency Contact</h3>
+                    <p>24/7 Emergency Hotline:</p>
+                    <a href="tel:+918780323877" style="color: #ff4757; font-weight: bold; font-size: 1.2rem;">+91 87803 23877</a>
+                    <br>
+                    <a href="mailto:shreevoluntarybloodbank@gmail.com">
+                        Email: shreevoluntarybloodbank@gmail.com</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Location</h3>
+                    <p>Shree Voluntary Blood Centre<br>
+                    3rd Floor Tulsi Landmark,<br> 
+                    Sahkari Jin, Himatnagar, Sabarkantha,<br>
+                    Gujarat, India - 383001</p>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100088231343802" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://wa.me/+918780323877" class="social-link whatsapp" target="_blank" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Shree Voluntary Blood Center. All rights reserved. | Designed & Developed by Bhishmang Patel (DEPLOY-X).</p>
+            </div>
+        </div>
+    </footer>
+
+   <script src="script.js"></script>
+    
+</body>
+</html>
