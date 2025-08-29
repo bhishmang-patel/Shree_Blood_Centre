@@ -16,6 +16,11 @@ body {
     line-height: 1.6;
     color: #333;
     overflow-x: hidden;
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-top: env(safe-area-inset-top);
+    padding-bottom: env(safe-area-inset-bottom);
+    background-color: #fff;
 }
 
 html, body { -webkit-text-size-adjust: 100%; overflow-x: hidden; }
@@ -1528,4 +1533,11 @@ input[type="date"] {
 .fade-in.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+@supports (padding: max(0px)) {
+  body {
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+  }
 }
