@@ -381,19 +381,5 @@ function showSlider(type) {
     resetTimeAnimation() // Reset the running time animation
 }
 
-// Start the initial animation 
-resetTimeAnimation()
-
-function setVh() {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty('--vh', `${vh}px`);
-}
-
-// Set on load
-setVh();
-
-// Update on resize (orientation change, address bar toggle, etc.)
-window.addEventListener('resize', setVh);
-
 
   
