@@ -892,6 +892,7 @@ input[type="date"] {
 
     .hero-visual {
         order: -1; 
+        margin-top: 2rem;
         margin-bottom: 2rem;
     }
     
