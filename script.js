@@ -381,7 +381,5 @@ function showSlider(type) {
     resetTimeAnimation() // Reset the running time animation
 }
 
-// Start the initial animation 
-resetTimeAnimation()
 
   
