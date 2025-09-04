@@ -73,12 +73,12 @@ input, select, textarea, button {
 }
 
 .logo-icon img{
-    width: 70px;
+    width: 100px;
     height: 70px;
 }
 
 .logo-icon {
-    width: 70px;
+    width: 100px;
     height: 70px;
     background: transparent;
     border-radius: 50%;
