@@ -51,7 +51,7 @@ input, select, textarea, button {
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 0;
+    padding: 0 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -60,7 +60,6 @@ input, select, textarea, button {
 .logo a {
     text-decoration: none;
     display: flex;
-    margin-left: -50px;
     align-items: center;
     gap: 0.5rem;
     color: #613442;
@@ -71,7 +70,6 @@ input, select, textarea, button {
 .logo p {
     color: #fa0021;
     text-align: left;
-    margin-left: -50px;
 }
 
 .logo-icon img{
@@ -821,7 +819,7 @@ input[type="date"] {
 /* L = 1200px (tablets / small laptops) */
 @media (max-width: 1200px) {
     .container, .nav-container {
-        padding: 0 0rem;
+        padding: 0 1.5rem;
     }
 
     .logo-icon {
@@ -964,7 +962,7 @@ input[type="date"] {
 /* Small devices <= 768px (phones) */
 @media (max-width: 768px) {
     .container, .nav-container {
-        padding: 0 0rem;
+        padding: 0 1rem;
     }
     
     .contact {
