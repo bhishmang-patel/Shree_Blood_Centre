@@ -79,7 +79,7 @@ input, select, textarea, button {
 
 .logo-icon {
     width: 100px;
-    height: 100px;
+    height: 40px;
     background: transparent;
     border-radius: 50%;
     display: flex;
