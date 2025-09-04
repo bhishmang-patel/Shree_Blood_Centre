@@ -821,7 +821,7 @@ input[type="date"] {
 /* L = 1200px (tablets / small laptops) */
 @media (max-width: 1200px) {
     .container, .nav-container {
-        padding: 0 1.5rem;
+        padding: 0 0rem;
     }
 
     .logo-icon {
@@ -964,7 +964,7 @@ input[type="date"] {
 /* Small devices <= 768px (phones) */
 @media (max-width: 768px) {
     .container, .nav-container {
-        padding: 0 1rem;
+        padding: 0 0rem;
     }
     
     .contact {
