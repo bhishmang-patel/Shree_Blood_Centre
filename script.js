@@ -57,35 +57,6 @@ function checkScroll() {
     });
 }
 
-// Add blood drop floating animation
-function createFloatingBloodDrop() {
-const drop = document.createElement('div');
-drop.style.position = 'fixed';
-drop.style.width = '10px';
-drop.style.height = '10px';
-drop.style.background = '#ff4757';
-drop.style.borderRadius = '50% 50% 50% 50% / 60% 60% 40% 40%';
-drop.style.transform = 'rotate(-45deg)';
-drop.style.left = Math.random() * window.innerWidth + 'px';
-drop.style.top = '-20px';
-drop.style.opacity = '0.7';
-drop.style.pointerEvents = 'none';
-drop.style.zIndex = '1';
-
-document.body.appendChild(drop);
-
-let pos = -20;
-const fall = setInterval(() => {
-    pos += 2;
-    drop.style.top = pos + 'px';
-    
-    if (pos > window.innerHeight) {
-        clearInterval(fall);
-        drop.remove();
-    }
-}, 50);
-}
-
 // Add floating animation to blood drop on scroll
 window.addEventListener('scroll', function() {
     const bloodDrop = document.querySelector('.blood-drop');
@@ -95,9 +66,6 @@ window.addEventListener('scroll', function() {
         bloodDrop.style.transform = `translateY(${parallax}px) rotate(${parallax * 0.1}deg)`;
     }
 });
-
-// Create floating drops periodically
-setInterval(createFloatingBloodDrop, 3000);
 
 // Add typing effect to hero title
 function typeWriter() {
