@@ -44,37 +44,52 @@
   <meta name="twitter:description" content="Be a hero in Himatnagar, Gujarat. Donate blood at Shree Voluntary Blood Centre—safe, reliable, and 24/7 available." />
   <meta name="twitter:image" content="https://www.shreebloodcenter.in/assets/og-image.png">
 
-  <!-- Schema (Blood Bank as Medical Organization) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BloodBank",
-    "name": "Shree Voluntary Blood Centre",
-    "url": "https://www.shreebloodcenter.in",
-    "logo": "https://www.shreebloodcenter.in/assets/favicon-512x512.png",
-    "image": "https://www.shreebloodcenter.in/assets/favicon-512x512.png",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "3rd floor Tulsi Landmark, Sahkari Jin",
-      "addressLocality": "Himatnagar",
-      "addressRegion": "Gujarat",
-      "postalCode": "383001",
-      "addressCountry": "IN"
+<!-- Schema (Blood Bank as Medical Organization) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.shreebloodcenter.in#organization",
+      "name": "Shree Voluntary Blood Centre",
+      "url": "https://www.shreebloodcenter.in",
+      "logo": "https://www.shreebloodcenter.in/assets/logo-512.png",
+      "image": "https://www.shreebloodcenter.in/assets/logo-512.png",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+91-8780323877",
+        "contactType": "customer service",
+        "areaServed": "IN",
+        "availableLanguage": ["en", "hi", "gu"]
+      },
+      "openingHours": "Mo-Su 00:00-23:59",
+      "sameAs": [
+        "https://www.facebook.com/",
+        "https://www.instagram.com/"
+      ]
     },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+91-8780323877",
-      "contactType": "customer service",
-      "areaServed": "IN",
-      "availableLanguage": ["en", "hi", "gu"]
-    },
-    "openingHours": "Mo-Su 00:00-23:59",
-    "sameAs": [
-      "https://www.facebook.com/",
-      "https://www.instagram.com/"
-    ]
-  }
-  </script>
+    {
+      "@type": "BloodBank",
+      "@id": "https://www.shreebloodcenter.in#bloodbank",
+      "name": "Shree Voluntary Blood Centre",
+      "url": "https://www.shreebloodcenter.in",
+      "image": "https://www.shreebloodcenter.in/assets/logo-512.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "3rd floor Tulsi Landmark, Sahkari Jin",
+        "addressLocality": "Himatnagar",
+        "addressRegion": "Gujarat",
+        "postalCode": "383001",
+        "addressCountry": "IN"
+      },
+      "parentOrganization": {
+        "@id": "https://www.shreebloodcenter.in#organization"
+      }
+    }
+  ]
+}
+</script>
 
   <!-- EmailJS -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
