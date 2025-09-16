@@ -36,7 +36,7 @@ input, select, textarea, button {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(218, 209, 213, 0.95);
+    background: #ffff;
     backdrop-filter: blur(10px);
     z-index: 1000;
     padding: 1rem 0;
@@ -44,7 +44,7 @@ input, select, textarea, button {
 }
 
 .navbar.scrolled {
-    background: rgba(218, 209, 213, 0.95);
+    background: #ffff;
     box-shadow: 0 2px 20px rgba(220, 38, 127, 0.3);
 }
 
