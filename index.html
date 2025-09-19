@@ -91,6 +91,41 @@
 }
 </script>
 
+<!-- Schema (Website for sitelinks) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": "https://www.shreebloodcenter.in#website",
+    "url": "https://www.shreebloodcenter.in/",
+    "name": "Shree Voluntary Blood Centre",
+    "publisher": {
+      "@id": "https://www.shreebloodcenter.in#organization"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.shreebloodcenter.in/?s={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+
+  <!-- Breadcrumb Schema (Homepage) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.shreebloodcenter.in/"
+      }
+    ]
+  }
+  </script>  
+
   <!-- EmailJS -->
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
   <script type="text/javascript">
